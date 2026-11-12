@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: malfoy-bot
+    runtime: docker
+    plan: starter            # persistent disks need a paid plan
+    healthCheckPath: /health
+    disk:
+      name: malfoy-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: DATA_DIR
+        value: /var/data
+      - key: PREFIX
+        value: "."
+      - key: GROQ_API_KEY
+        sync: false
+      - key: PAIRING_NUMBER
+        sync: false
+      - key: QR_KEY
+        sync: false
+      - key: OWNER_NUMBER
+        sync: false
+      - key: PUBLIC_URL
+        sync: false

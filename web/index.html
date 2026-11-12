@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malfoy</title>
+  <meta name="description" content="Malfoy is a WhatsApp quest bot. Sign in to set your picture, buy gear and climb the global leaderboard.">
+  <meta name="theme-color" content="#0d1322">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d1322'/%3E%3Cpath d='M16 5l9 8-4 14h-10l-4-14z' fill='%238fd6ea'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="#/">Malfoy</a>
+    <nav id="nav" aria-label="Main">
+      <a href="#/" data-r="home">Home</a>
+      <a href="#/hall" data-r="hall">Leaderboard</a>
+      <a href="#/shop" data-r="shop">Shop</a>
+      <a href="#/me" data-r="me">Profile</a>
+    </nav>
+    <div id="who" class="who"></div>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <footer class="foot">Malfoy runs on WhatsApp. Send <code>.menu</code> to the bot to see every command.</footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">This site needs JavaScript.</p></noscript>
+  <script src="/app.js" defer></script>
+</body>
+</html>
